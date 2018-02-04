@@ -2,6 +2,7 @@ package com.example.android.quizjava;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -34,11 +35,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         nameField = (EditText) findViewById(R.id.name_field);
-        //Editable nameEditable = nameField.getText();
-        //name = nameEditable.toString();
-
         donebutton = (Button) findViewById(R.id.donebu);
 
     }
