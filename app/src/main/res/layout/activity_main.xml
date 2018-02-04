@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    >
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:textColorHint="#ffffff"
+        android:shadowColor="#ffffff"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name: "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/name_field"
+        android:id="@+id/your_name"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@+id/name_field"
+        android:layout_alignParentRight="true"
+        android:id="@+id/donebu"
+        android:onClick="gotogame"
+        />
+
+    <TextView
+
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:paddingVertical="16dp"
+        android:text="Question: "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/whole_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_margin="16dp"
+        android:src="@drawable/question1"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whole_question"
+      android:paddingTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:paddingVertical="16dp"
+        android:textColor="#ffffff"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox1"
+        android:layout_marginLeft="16dp"
+        android:textColor="#ffffff"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox2"
+        android:layout_marginLeft="16dp"
+        android:paddingVertical="16dp"
+        android:textColor="#ffffff"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/nextb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="CheckAnswer"
+        android:text="Next"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/stopb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="stopQuiz"
+        android:text="Stop"
+        android:visibility="gone"
+
+        />
+</RelativeLayout>
+
